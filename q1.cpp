@@ -22,10 +22,10 @@ void alternateSwap(int *arr, int n) {
 int main(){
     // n: size of input array, target = pair to find
     int n, target;
-    cout << "Please input size of input array:";
+    cout << "Please input size of input array: ";
     cin >> n;
-    cout << endl;
     // taking array input
+    cout << "Please input space separated array elements: ";
     int arr[n] = {0};
     for(int i = 0; i < n; i++){
         cin >> arr[i];
