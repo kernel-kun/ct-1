@@ -6,13 +6,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void checkPairSum(int *arr, int n, int target){
+void checkPairSum(int *arr, int n, int target)
+{
     // Using Brute-force solution
     // Running i from 0 to n - 1
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         // Running j from i to n - 1
-        for(int j = i + 1; j < n; j++){
-            if(arr[i] + arr[j] == target){
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[i] + arr[j] == target)
+            {
                 cout << "Pair found (" << arr[i] << ", " << arr[j] << ")" << endl;
                 return;
             }
@@ -22,7 +26,8 @@ void checkPairSum(int *arr, int n, int target){
     return;
 }
 
-int main(){
+int main()
+{
     // n: size of input array, target = pair to find
     int n, target;
     cout << "Please input size of input array:";
@@ -33,7 +38,8 @@ int main(){
     cout << endl;
     // taking array input
     int arr[n] = {0};
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
     }
 
